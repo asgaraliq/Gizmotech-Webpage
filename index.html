@@ -6,6 +6,7 @@
     <title>GizmoTech IT Solutions | Complete Computer & IT Support</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -14,7 +15,7 @@
             <div class="logo">
                 <span class="logo-text">GizmoTech</span>
             </div>
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
             <nav>
                 <ul id="nav-menu">
                     <li><a href="#home">Home</a></li>
@@ -42,9 +43,14 @@
             <h2 class="section-title">Our Services</h2>
             <div class="service-grid">
                 <div class="service-card">
-                    <div class="service-icon">🖥️</div>
-                    <h3>Computer Repair</h3>
-                    <p>Comprehensive hardware diagnostics, virus removal, data recovery, and performance optimization for all devices.</p>
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Migration, setup, and management of cloud services including AWS, Azure, and Google Cloud.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web & App Development</h3>
+                    <p>Custom websites, e-commerce solutions, and web application development tailored to your needs.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔧</div>
@@ -52,17 +58,14 @@
                     <p>Onsite and remote support for software installation, network setup, and troubleshooting for businesses.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Migration, setup, and management of cloud services including AWS, Azure, and Google Cloud.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Web Development</h3>
-                    <p>Custom websites, e-commerce solutions, and web application development tailored to your needs.</p>
+                    <div class="service-icon">🖥️</div>
+                    <h3>Computer Repair</h3>
+                    <p>Comprehensive hardware diagnostics, virus removal, data recovery, and performance optimization for all devices.</p>
                 </div>
             </div>
         </div>
+    </section>
+
     </section>
 
     <!-- About Section -->
@@ -74,11 +77,11 @@
                     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="GizmoTech Team">
                 </div>
                 <div class="about-text">
-                    <p>GizmoTech IT Solutions was founded in 2003 by two tech-savvy college friends, <strong>A. Ali Qureshi</strong> and <strong>Arfat Shaikh</strong>. What started as a passion for laptop and computer repair has now grown into a full-scale IT service and consulting business based in Mumbai.</p>
-                    <p>With more than 15 years of industry experience across domains such as Banking, Finance, Pharma, and Healthcare, we've built a solid foundation in IT Service Management, Hardware Support, Cloud Solutions, Remote Support, and much more.</p>
+                    <p>GizmoTech IT Solutions was founded in 2003 by two tech-savvy college friends. What started as a passion for laptop and computer repair has now grown into a full-scale IT service and consulting business based in Mumbai.</p>
+                    <p>With over 20+ years of industry experience across domains such as Banking, Finance, Pharma, and Healthcare, we've built a solid foundation in IT Service Management, Hardware Support, Cloud Solutions, Remote Support, and much more.</p>
                     
                     <div class="mission-vision">
-                        <h3>🎯 Our Mission</h3>
+                        <h3>🎯 Our Mission</h3></i> Our Mission</h3>
                         <p>Our mission is simple — to make technology easier, smarter, and more accessible for everyone. We believe in transparency, honesty, and customer-first solutions.</p>
                     </div>
                 </div>
@@ -94,7 +97,7 @@
             <div class="features">
                 <div class="feature-card">
                     <div class="feature-icon">⏱️</div>
-                    <h3>15+ Years Experience</h3>
+                    <h3>20+ Years Experience</h3>
                     <p>Since 2003, we've evolved from a computer repair service to a full-scale IT solutions provider.</p>
                 </div>
                 <div class="feature-card">
@@ -116,6 +119,7 @@
         </div>
     </section>
 
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -124,46 +128,56 @@
                 <div class="contact-info">
                     <h3>Our Location</h3>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.237292897713!2d72.82821431537736!3d18.996630559725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce3e7a5a1a9f%3A0x7b9a1a9f0a9a9a9f!2sAdam%20Mistry%20Lane%2C%20Dr.%20Babasaheb%20Ambedkar%20Road%2C%20Near%20BMC%20F%2FSouth%20Ward%20Office%2C%20Parel%2C%20Mumbai%20-%20400012!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=GizmoTech%20IT%20Solutions,%20Parel,%20Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="GizmoTech Location"></iframe>
                     </div>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-icon">📧</span>
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
                             <span>gizmotechcomputerservice@gmail.com</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">📱</span>
-                            <span>+91 98765 43210</span>
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <span>+91 92221 40250</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">🏢</span>
-                            <span>Adam Mistry Lane, Dr. Babasaheb Ambedkar Road, Near BMC F/South Ward Office, Parel Mumbai - 400012</span>
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Adam Mistry Lane, Dadar East, Mumbai - 400014</span>
                         </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/gizmotech.computers?igsh=MXdjMWh4aXAyMzUzaA==" title="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <form class="contact-form" id="inquiryForm">
-                    <div class="form-group">
-                        <label for="name">Your Name*</label>
-                        <input type="text" id="name" class="form-control" required>
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label for="phone">Phone (10 digits)*</label>
+                            <input type="tel" id="phone" class="form-control" pattern="[0-9]{10}" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address*</label>
+                        <label for="email">Email*</label>
                         <input type="email" id="email" class="form-control" required>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Contact Number</label>
-                        <input type="tel" id="phone" class="form-control">
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label for="city">City*</label>
+                            <input type="text" id="city" class="form-control" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label for="state">State*</label>
+                            <input type="text" id="state" class="form-control" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="city">City*</label>
-                        <input type="text" id="city" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="state">State*</label>
-                        <input type="text" id="state" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message*</label>
+                        <label for="message">Message/Inquiry*</label>
                         <textarea id="message" class="form-control" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -192,23 +206,24 @@
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Computer Repair</a></li>
-                        <li><a href="#">IT Support</a></li>
-                        <li><a href="#">Cloud Solutions</a></li>
-                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#services">Web & AppDevelopment</a></li>
+                        <li><a href="#services">Cloud Support</a></li>
+                        <li><a href="#services">Enterprise Mobility Solutions</a></li>
+                        <li><a href="#services">IT Infrastructure Support</a></li>
+                        <li><a href="#services">Computers Repair</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li>gizmotechcomputerservice@gmail.com</li>
-                        <li>+91 98765 43210</li>
-                        <li>Parel, Mumbai - 400012</li>
+                        <li><i class="fas fa-envelope"></i> gizmotechcomputerservice@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 92221 40250</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Parel, Mumbai - 400012</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 GizmoTech IT Solutions. All Rights Reserved.</p>
+                <p>&copy; 2025 GizmoTech IT Solutions. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
