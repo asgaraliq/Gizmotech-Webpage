@@ -137,6 +137,7 @@ nav a:hover:after {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    padding: 0.5rem;
 }
 
 /* ===== Hero Section ===== */
@@ -226,7 +227,7 @@ nav a:hover:after {
 }
 
 .service-icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--accent);
 }
@@ -287,6 +288,9 @@ nav a:hover:after {
     color: var(--primary);
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* ===== Why Choose Us ===== */
@@ -352,6 +356,7 @@ nav a:hover:after {
     margin-bottom: 1.5rem;
     border-radius: 8px;
     overflow: hidden;
+    height: 250px;
 }
 
 .contact-info h3 {
@@ -385,6 +390,32 @@ nav a:hover:after {
 .contact-icon {
     margin-right: 0.8rem;
     color: var(--accent);
+    width: 20px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    color: var(--primary);
+    font-size: 1.1rem;
+    transition: 0.3s;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    color: var(--white);
+    background: var(--primary);
 }
 
 .contact-form {
@@ -394,8 +425,19 @@ nav a:hover:after {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .form-group {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.form-group.half-width {
+    flex: 0 0 calc(50% - 0.5rem);
 }
 
 .form-group label {
@@ -453,6 +495,9 @@ footer {
 
 .footer-links li {
     margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-links a {
@@ -493,19 +538,28 @@ footer {
     nav ul {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
         width: 100%;
         background: var(--primary);
         padding: 1rem;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         z-index: 99;
     }
 
     nav ul.show {
         display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
     }
 
     .mobile-menu-btn {
@@ -548,7 +602,20 @@ footer {
         font-size: 1.5rem;
     }
 
-    .features {
-        grid-template-columns: 1fr;
+    .contact-info, .contact-form {
+        padding: 1.2rem;
+    }
+
+    .map-container {
+        height: 200px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group.half-width {
+        flex: 1;
     }
 }
